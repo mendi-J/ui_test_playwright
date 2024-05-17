@@ -29,12 +29,6 @@ test.describe("Sauce Demo App Automation Task", () => {
     await loginPage.enterUsername(page, login.username);
     await loginPage.enterPassword(page, login.password);
     await loginPage.clickLogin(page);
-
-    // Debugging: Check for error message
-    // const errorMessage = await page.locator('[data-test="error"]').innerText();
-    // if (errorMessage) {
-    //   console.log(`Login Error: ${errorMessage}`);
-    // }
   });
 
   test("Verify successful login", async ({ page }) => {
